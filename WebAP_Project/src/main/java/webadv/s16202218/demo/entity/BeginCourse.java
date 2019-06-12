@@ -1,15 +1,21 @@
 package webadv.s16202218.demo.entity;
 
 public class BeginCourse {
-	private String AdminNumber;
+	private String TeacherId;
 	private String CourseId;
-	private String BeginTime;
-	private String BeginAddress;
-	public String getAdminNumber() {
-		return AdminNumber;
+	private String CourseTerm;
+	private Boolean WhetherStartCourse = false;
+	public BeginCourse(String TeacherId, String CourseId, String CourseTerm) {
+		super();
+		this.TeacherId = TeacherId;
+		this.CourseId = CourseId;
+		this.CourseTerm = CourseTerm;
 	}
-	public void setAdminNumber(String adminNumber) {
-		AdminNumber = adminNumber;
+	public String getTeacherId() {
+		return TeacherId;
+	}
+	public void setTeacherId(String teacherId) {
+		TeacherId = teacherId;
 	}
 	public String getCourseId() {
 		return CourseId;
@@ -17,17 +23,16 @@ public class BeginCourse {
 	public void setCourseId(String courseId) {
 		CourseId = courseId;
 	}
-	public String getBeginTime() {
-		return BeginTime;
+	public String getCourseTerm() {
+		return CourseTerm;
 	}
-	public void setBeginTime(String beginTime) {
-		BeginTime = beginTime;
+	public void setCourseTerm(String courseTerm) {
+		CourseTerm = courseTerm;
 	}
-	public String getBeginAddress() {
-		return BeginAddress;
+	public Boolean getWhetherStartCourse() {
+		return WhetherStartCourse;
 	}
-	public void setBeginAddress(String beginAddress) {
-		BeginAddress = beginAddress;
+	public void setWhetherStartCourse(Boolean whetherStartCourse) {
+		WhetherStartCourse = whetherStartCourse;
 	}
-
 }

@@ -1,9 +1,14 @@
 package webadv.s16202218.demo.entity;
 
-public class SelectCourse {
+public class ChooseCourse {
 	private String CourseId;
 	private String StudentId;
-	private int Score;
+	private String CourseTerm;
+	public ChooseCourse(String CourseId, String StudentId, String CourseTerm) {
+		this.setCourseId(CourseId);
+		this.setStudentId(StudentId);
+		this.setCourseTerm(CourseTerm);
+	}
 	public String getCourseId() {
 		return CourseId;
 	}
@@ -16,10 +21,10 @@ public class SelectCourse {
 	public void setStudentId(String studentId) {
 		StudentId = studentId;
 	}
-	public int getScore() {
-		return Score;
+	public String getCourseTerm() {
+		return CourseTerm;
 	}
-	public void setScore(int score) {
-		Score = score;
+	public void setCourseTerm(String courseTerm) {
+		CourseTerm = courseTerm;
 	}
 }
