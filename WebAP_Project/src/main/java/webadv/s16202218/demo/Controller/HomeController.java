@@ -11,15 +11,17 @@ public class HomeController {
 	public String Index(Model model) {
 		return "login";
 	}
-	
 	@GetMapping("/")
 	public String welcome(Model model) {   
 	    return "login";		
 	}
-	
 	@GetMapping("/home")
 	public String login(Model model) {
 		return "home";
+	}
+	@GetMapping("/AuditCourseSelection")
+	public String auditCourseSelection(Model model) {
+		return "AuditCourseSelection";
 	}
 	@GetMapping("/CourseSelectionInformation")
 	public String courseSelectionInformation(Model model) {

@@ -10,9 +10,10 @@ public class OptionalCourseController {
 	@Autowired
     private CourseServiceImp courseService;
 	
-	@GetMapping("/AuditCourseSelection")
+	@GetMapping("/login")
 	public String login(Model model) {
 		model.addAttribute("begincourse_list",courseService.findAll());
 		return "AuditCourseSelection";
 	}
+	
 }
